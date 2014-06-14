@@ -13,9 +13,8 @@ Requirements
 
 Usage
 ---------------------
-<blackquote>
-git clone https://github.com/https://github.com/guilleliss/simple-silex-cms.git path/
-cd path/
-curl -s http://getcomposer.org/installer | php
-php composer.phar install
-</blackquote>
+
+> git clone https://github.com/https://github.com/guilleliss/simple-silex-cms.git path/
+> cd path/
+> curl -s http://getcomposer.org/installer | php
+> php composer.phar install
