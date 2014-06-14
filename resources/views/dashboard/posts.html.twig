@@ -1,0 +1,38 @@
+{% extends 'dashboard/layout_dashboard.html.twig' %}
+{% set active = 'posts' %}
+
+{% block content %}
+
+    <h1>Posts</h1>
+
+	<table class="table table-striped table-hover">
+    <thead>
+		<th>#ID</th>
+    	<th>Title</th>
+    	<th>Date created</th>
+    	<th>Options</th>
+    </thead>
+    {% for post in posts %}
+    <tr>
+    	<td>{{post.id}}</td>
+    	<td>{{ post.title }}</td>
+    	<td>{{ post.created|date("F jS Y \\a\\t g:ia") }}</td>
+    	<td>
+    		<a href="/blog/{{post.id}}"><span class="glyphicon glyphicon-search" data-toggle="tooltip" data-placement="top" title="View post"></span></a>
+    		<a href="/blog/edit/{{post.id}}"><span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Edit post"></span></a>
+    		<a href="/blog/delete/{{post.id}}"><span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Delete post"></span></a>
+    	</td>
+    </tr>
+    {% endfor %}
+	</table>
+
+	<a class="btn btn-primary" href="/blog/new"><span class="glyphicon glyphicon-pencil"></span> New post</a>
+
+    {% block javascript %}
+		<script type="text/javascript">
+		    $(function () {
+		        $('[data-toggle="tooltip"]').tooltip()
+		    });
+		</script>
+    {% endblock %}
+{% endblock %}

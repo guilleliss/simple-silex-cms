@@ -1,0 +1,24 @@
+{% extends 'blog/layout_blog.html.twig' %}
+{% set active = 'blog' %}
+
+{% block content %}
+
+    <h1>Blog</h1>
+
+    {% for post in posts %}
+        <h1><a href="{{post.id}}">{{ post.title }}</a></h1>
+        <p class="lead">by <a href="index.php">{{ post.username }}</a></p>
+        <hr>
+        <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.created|date("F jS Y \\a\\t g:ia")  }}</p>
+        <!-- 
+        <hr>
+		<img src="http://placehold.it/900x300" class="img-responsive">
+        <hr>
+		-->
+        <p>{{post.content}}</p>
+        <a class="btn btn-primary" href="{{post.id}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+        <hr>
+    {% endfor %}
+    
+{% endblock %}

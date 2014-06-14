@@ -1,0 +1,1 @@
+create table posts (id integer primary key, title varchar(100), content varchar(1000), created date);

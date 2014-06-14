@@ -1,0 +1,21 @@
+{% extends 'layout_base.html.twig' %}
+{% set active = 'admin' %}
+
+{% block layoutbase %}
+<div class="col-lg-2 pull-left">
+    <div class="well sidebar-nav">
+        <ul class="nav nav-tabs nav-stacked">
+            <li class="nav-header">Navigation</li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Site settings</a></li>
+        </ul>
+    </div>
+</div>
+<div class="col-lg-10">
+        <div class="well">
+            {% block content %}
+            {% endblock %}
+        </div>
+</div>
+{% endblock %}

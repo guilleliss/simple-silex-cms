@@ -1,0 +1,20 @@
+{% extends 'blog/layout_blog.html.twig' %}
+{% set active = 'edit' %}
+
+{% block content %}
+
+	{% if post.id is defined %}
+	    <h1>Edit post</h1>
+	{% else %}
+	    <h1>New post</h1>
+	{% endif %}
+
+
+	<form action="#" method="post">
+		{{ form_widget(form) }}
+
+		<br>
+		<input type="submit" name="submit" class="btn btn-primary"/>
+	</form>
+
+{% endblock %}

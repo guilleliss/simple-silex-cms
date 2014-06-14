@@ -1,0 +1,16 @@
+{% extends 'blog/layout_blog.html.twig' %}
+{% set active = 'post' %}
+
+{% block content %}
+
+    <h1><a href="{{post.id}}">{{ post.title }}</a></h1>
+    <p class="lead">by <a href="index.php">{{ post.username }}</a></p>
+
+	{{post.content}}
+
+	<br><br>
+    {% if is_granted('ROLE_USER') %}
+	<a class="btn btn-primary" href="edit/{{post.id}}"><span class="glyphicon glyphicon-pencil"></span> Edit post</a>
+    {% endif %}
+
+{% endblock %}

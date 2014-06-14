@@ -1,0 +1,28 @@
+{% extends 'layout_base.html.twig' %}
+{% set active = 'dashboard' %}
+
+{% block layoutbase %}
+<div class="col-lg-2">
+	<div class="dashboard-sidebar-wrapper">
+		<ul class="nav nav-sidebar">
+			<li class="nav-header"><a href="#">Navigation</a></li>
+			<li><a href="/dashboard" class="{{ active == 'dashboard' ? active : '' }}"><span class="glyphicon glyphicon-th"> Dashboard</a></li>
+			<li><a href="posts"  class="{{ active == 'posts' ? active : '' }}"><span class="glyphicon glyphicon-pencil"> Posts</a></li>
+			<li><a href="pages"><span class="glyphicon glyphicon-file"> Pages</a></li>
+			<li><a href="profile" class="{{ active == 'profile' ? 'active' : '' }}"><span class="glyphicon glyphicon-tasks"> Profile</a></li>
+			{% if is_granted('ROLE_ADMIN') %}
+			<li class="divider"></li>
+			<li><a href="users"><span class="glyphicon glyphicon-user"> Users</a></li>
+			<li><a href="settings"><span class="glyphicon glyphicon-cog"> Settings</a></li>
+			{% endif %}
+		</ul>
+	</div>
+</div>
+
+<div class="col-lg-10">
+		<div class="well">
+			{% block content %}
+			{% endblock %}
+		</div>
+</div>
+{% endblock %}
