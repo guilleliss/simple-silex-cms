@@ -1,21 +1,21 @@
-Simple Silex CMS
-====================
+## Simple Silex CMS
 
 
-About
----------------------
+
+## About
+
 Attempt to build a basic CMS with blog functionallity based on [Silex PHP microframework](http://silex.sensiolabs.org).  
 
-Requirements
----------------------
+## Requirements
+
 * PHP 5.4*
 * Mysql
 * Composer
 
 *Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development). See [Silex documentation](http://silex.sensiolabs.org/doc/web_servers.html) on that.
 
-Packages
----------------------
+## Packages
+
 * Twig as template system.
 * Doctrine for database access.
 * Twitter Boostrap 3.1.
@@ -25,10 +25,9 @@ Packages
 Check [Silex service providers documentation](http://silex.sensiolabs.org/documentation) for info.
 
 
-Usage
----------------------
+## Usage
 
-# Without vagrant
+### Without vagrant
 
 	git clone https://github.com/guilleliss/simple-silex-cms.git path/
 	cd path/
@@ -38,11 +37,11 @@ Usage
 
 Then just open [http://localhost:8000](http://localhost:8080).
 
-# With vagrant
+### With vagrant
 Comming soon.
 
-TODO
----------------------
+## TODO
+
 * Installation with database initialization.
 * Page CRUD.
 * Better user managment, authorization and authentication.
