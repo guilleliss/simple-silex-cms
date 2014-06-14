@@ -28,6 +28,8 @@ Check [Silex service providers documentation](http://silex.sensiolabs.org/docume
 Usage
 ---------------------
 
+# Without vagrant
+
 	git clone https://github.com/guilleliss/simple-silex-cms.git path/
 	cd path/
 	curl -s http://getcomposer.org/installer | php
@@ -35,6 +37,9 @@ Usage
 	php -S localhost:8000 -t web web/index.php
 
 Then just open [http://localhost:8000](http://localhost:8080).
+
+# With vagrant
+Comming soon.
 
 TODO
 ---------------------
