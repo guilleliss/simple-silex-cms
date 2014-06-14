@@ -9,9 +9,21 @@ Attempt to build a basic CMS with blog functionallity based on [Silex PHP microf
 Requirements
 ---------------------
 * PHP 5.4*
+* Mysql
 * Composer
 
-*Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development). See [Silex documentation](http://silex.sensiolabs.org/doc/web_servers.html).
+*Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development). See [Silex documentation](http://silex.sensiolabs.org/doc/web_servers.html) on that.
+
+Packages
+---------------------
+* Twig as template system.
+* Doctrine for database access.
+* Twitter Boostrap 3.1.
+* Form/validator component for building forms and validation.
+* Security component for authorization and authentication.
+
+Check [Silex service providers documentation](http://silex.sensiolabs.org/documentation) for info.
+
 
 Usage
 ---------------------
@@ -22,10 +34,11 @@ Usage
 	php composer.phar install
 	php -S localhost:8000 -t web web/index.php
 
-Then just open [http://localhost:8080](http://localhost:8080).
+Then just open [http://localhost:8000](http://localhost:8080).
 
 TODO
 ---------------------
 * Installation with database initialization.
 * Page CRUD.
 * Better user managment, authorization and authentication.
+* Add vagrant environment with all the required resources.
