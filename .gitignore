@@ -2,3 +2,4 @@
 silex.sublime-project
 silex.sublime-workspace
 composer.lock
+vendor/
