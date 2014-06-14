@@ -11,7 +11,7 @@ Requirements
 * PHP 5.4*
 * Composer
 
-*Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development).
+*Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development). See [Silex documentation](http://silex.sensiolabs.org/doc/web_servers.html).
 
 Usage
 ---------------------
@@ -22,7 +22,7 @@ Usage
 	php composer.phar install
 	php -S localhost:8000 -t web web/index.php
 
-Then just go to http://localhost:8080
+Then just open `[http://localhost:8080](http://localhost:8080)`.
 
 TODO
 ---------------------
