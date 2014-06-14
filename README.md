@@ -1,6 +1,4 @@
-## Simple Silex CMS
-
-
+# Simple Silex CMS
 
 ## About
 
