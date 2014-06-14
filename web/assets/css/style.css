@@ -1,0 +1,26 @@
+body {
+	margin-top: 70px; /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+}
+
+footer {
+	margin: 50px 0;
+}
+
+.dashboard-sidebar-wrapper {
+	background: #F1F1F1;
+}
+
+.dashboard-sidebar-wrapper li.nav-header>a {
+	background: #2069a8;
+	color: white;
+}
+
+.dashboard-sidebar-wrapper li>a {
+	color: #333;
+}
+
+.dashboard-sidebar-wrapper li>a:hover {
+	background: #428bca;
+	color: white;
+}
+
