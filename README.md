@@ -22,7 +22,7 @@ Usage
 	php composer.phar install
 	php -S localhost:8000 -t web web/index.php
 
-Then just open `[http://localhost:8080](http://localhost:8080)`.
+Then just open [http://localhost:8080](http://localhost:8080).
 
 TODO
 ---------------------
