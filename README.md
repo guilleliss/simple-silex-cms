@@ -7,7 +7,7 @@ Basic CMS with blog functionallity based on [Silex PHP microframework](http://si
 ## Requirements
 
 * PHP 5.4*
-* Mylite
+* SQLite
 * Composer
 
 *Older versions of PHP would work but at least 5.4 is required for built-in webserver (for development). See [Silex documentation](http://silex.sensiolabs.org/doc/web_servers.html) on that.
@@ -51,5 +51,4 @@ Then just point the browser to [http://localhost:8080](http://localhost:8080).
 * Wizzad installation with database initialization.
 * Page CRUD.
 * Better user managment, authorization and authentication.
-* Add vagrant environment with all the required resources.
 * Testing, lots of testing.
